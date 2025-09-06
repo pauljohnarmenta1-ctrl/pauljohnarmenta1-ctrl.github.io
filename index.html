@@ -3,36 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Paul Armenta | Portfolio</title>
+    <title>John Paul Armenta | Professional Portfolio</title>
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
     <header>
-        <h1>John Paul Armenta</h1>
-        <p class="bio">Aspiring computer engineer with a passion for image processing, artificial intelligence, and innovative technology solutions. Currently exploring advanced segmentation techniques and contributing to open-source projects to sharpen my expertise.</p>
-        <div class="contact">
-            <p>Email: johnpaularmenta1@gmail.com</p>
-            <p>GitHub: <a href="https://github.com/pauljohnarmenta1-ctrl">github.com/pauljohnarmenta1-ctrl</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/johnparmenta">linkedin.com/in/johnparmenta</a></p>
-        </div>
+        <h1>Hi, I'm Paul</h1>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p class="bio">I’m an aspiring computer engineer with a strong passion for image processing, artificial intelligence, and innovative technology solutions. With expertise in MATLAB, Python, and USB webcam integration, I’m committed to advancing my skills through hands-on projects and open-source contributions.</p>
+            <section class="Skills">
+            <h2>Skills</h2>
+            <ul class="skills">
+                <li>MATLAB Programming</li>
+                <li>Image Processing & Segmentation</li>
+                <li>Artificial Intelligence</li>
+                <li>USB Webcam Development</li>
+            </ul>
+        </section>
+
+        
     </header>
     <section class="projects">
-        <h2>Selected Projects</h2>
+        <h2>Projects</h2>
         <div class="project">
-            <h3>Summative 1: Background Removal</h3>
-            <p>Developed a MATLAB script to remove backgrounds from live webcam feeds using HSV color space, focusing on isolating objects like a cone. Initial exploration into image segmentation techniques.</p>
+            <h3>Project 1: Image Segmentation</h3>
+            <p>Developed a MATLAB script to remove backgrounds from live webcam feeds using HSV color space, isolating objects like a cone. This project marks my initial dive into image segmentation techniques, demonstrating practical application of color-based filtering.</p>
             <img src="src/image/paul.png" alt="Summative 1 Screenshot">
-            <a href="https://raw.githubusercontent.com/pauljohnarmenta1-ctrl/pauljohnarmenta1-ctrl.github.io/main/src/image/jp.png" target="_blank">View Screenshot on GitHub</a>
+            <a href="https://raw.githubusercontent.com/pauljohnarmenta1-ctrl/pauljohnarmenta1-ctrl.github.io/main/src/image/jp.png" target="_blank">View Screenshot</a>
+            <a href="https://github.com/pauljohnarmenta1-ctrl/pauljohnarmenta1-ctrl.github.io" target="_blank">GitHub</a>
         </div>
         <div class="project">
-            <h3>Summative 2: Image Segmentation</h3>
-            <p>Advanced MATLAB project utilizing live camera feeds with USB Webcams Support Package for image segmentation, incorporating morphological operations to engrave initials and address segmentation challenges.</p>
+            <h3>Project 2: MATLAB Camera Feed</h3>
+            <p>Advanced MATLAB project utilizing the USB Webcams Support Package for real-time image segmentation. Incorporated morphological operations to engrave initials and addressed segmentation challenges, showcasing my ability to handle complex image processing tasks.</p>
             <img src="src/image/jp.png" alt="Summative 2 Screenshot">
-            <a href="https://raw.githubusercontent.com/pauljohnarmenta1-ctrl/pauljohnarmenta1-ctrl.github.io/main/src/image/jp.png" target="_blank">View Screenshot on GitHub</a>
+            <a href="https://raw.githubusercontent.com/pauljohnarmenta1-ctrl/pauljohnarmenta1-ctrl.github.io/main/src/image/jp.png" target="_blank">View Screenshot</a>
+            <a href="https://github.com/pauljohnarmenta1-ctrl/pauljohnarmenta1-ctrl.github.io" target="_blank">GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Project 3: Subject Bounding</h3>
+            <p>Developed a foundational AI model in Python and MATLAB for image classification with integrated live webcam input. This project demonstrates my expanding skills in machine learning and real-time data processing, while also laying the groundwork for future improvements and advanced applications..</p>
+            <img src="src/image/bounding.png" alt="Summative 2 Screenshot">
+            <a href="https://raw.githubusercontent.com/pauljohnarmenta1-ctrl/pauljohnarmenta1-ctrl.github.io/main/src/image/bounding.png" target="_blank">View Screenshot</a>
+            <a href="https://github.com/pauljohnarmenta1-ctrl/pauljohnarmenta1-ctrl.github.io" target="_blank">GitHub</a>
         </div>
     </section>
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:johnpaularmenta1@gmail.com">johnpaularmenta1@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/pauljohnarmenta1-ctrl">github.com/pauljohnarmenta1-ctrl</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/johnparmenta">linkedin.com/in/johnparmenta</a></p>
+        <p>Resume: <a href="https://github.com/pauljohnarmenta1-ctrl/pauljohnarmenta1-ctrl.github.io/raw/main/resume.pdf" target="_blank">Download CV (PDF)</a></p>
+        <form action="https://formsubmit.co/johnpaularmenta1@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
     <footer>
-        <p>&copy; 2025 John Paul Armenta. All rights reserved.</p>
+        <p>"Crafting Truth Through Code: Innovating the Future of Engineering" &copy; 2025 John Paul Armenta</p>
     </footer>
 </body>
 </html>
