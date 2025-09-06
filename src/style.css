@@ -1,28 +1,33 @@
 body {
-    font-family: 'Georgia', serif;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #0a0e1f, #1a2a44);
     margin: 0;
     padding: 20px;
-    color: #2c3e50;
+    color: #e0e0e0;
     line-height: 1.6;
+    background-image: radial-gradient(circle at 20% 20%, rgba(0, 255, 255, 0.1) 0%, transparent 20%), 
+                      radial-gradient(circle at 80% 80%, rgba(0, 191, 255, 0.1) 0%, transparent 20%);
+    background-size: 100px 100px;
+    animation: pulse 10s infinite;
 }
 header {
     text-align: center;
     padding: 40px;
-    background: #ffffff;
+    background: rgba(26, 42, 68, 0.9);
     border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
     margin-bottom: 30px;
 }
 h1 {
-    color: #34495e;
+    color: #00d4ff;
     font-size: 2.5em;
     margin: 0 0 15px;
     letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
 }
 .bio {
     font-size: 1.2em;
-    color: #7f8c8d;
+    color: #b0c4de;
     max-width: 800px;
     margin: 0 auto 20px;
 }
@@ -30,54 +35,59 @@ h1 {
     font-size: 1.1em;
 }
 .contact a {
-    color: #3498db;
+    color: #00eaff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 .contact a:hover {
-    color: #2980b9;
+    color: #00b7eb;
 }
 .projects {
     max-width: 900px;
     margin: 0 auto;
 }
 .projects h2 {
-    color: #34495e;
-    border-bottom: 2px solid #3498db;
+    color: #00d4ff;
+    border-bottom: 2px solid #00aaff;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    text-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
 }
 .project {
-    background: #ffffff;
+    background: rgba(15, 25, 45, 0.9);
     padding: 20px;
     margin: 15px 0;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     gap: 20px;
 }
 .project h3 {
-    color: #2c3e50;
+    color: #00ffcc;
     margin: 0 0 10px;
+    text-shadow: 0 0 5px rgba(0, 255, 204, 0.3);
 }
 .project p {
     flex: 1;
     margin: 0;
+    color: #c0c0c0;
 }
 .project img {
     max-width: 300px;
     height: auto;
     border-radius: 5px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    border: 1px solid #00aaff;
 }
 .project a {
-    color: #27ae60;
+    color: #00ffcc;
     text-decoration: none;
     font-weight: bold;
 }
 .project a:hover {
     text-decoration: underline;
+    color: #00cc99;
 }
 footer {
     text-align: center;
@@ -94,4 +104,9 @@ footer {
     .project img {
         margin-bottom: 15px;
     }
+}
+@keyframes pulse {
+    0% { background-size: 100px 100px; }
+    50% { background-size: 120px 120px; }
+    100% { background-size: 100px 100px; }
 }
